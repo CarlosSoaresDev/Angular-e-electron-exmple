@@ -1,27 +1,40 @@
-# AngularElectron
+SITE BASE
+https://malcoded.com/posts/angular-desktop-electron/
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+GIT BASE
+https://github.com/LukasMarx/angular-electron/blob/master/electron/tsconfig.json
 
-## Development server
+VIDEO BASE
+https://www.youtube.com/watch?v=u_vMChpZMCk
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## INSTALAR ANGULA
+npm install @angular/cli -g
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## INSTALAR ELECTRON
+npm i -D electron
 
-## Build
+## INSTALAR TYPES/ELECTRON
+npm i -D @types/electron
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## RODAR
+npm run electron
 
-## Running unit tests
+## PACOTE PARA INSTALAÇÃO 
+npm install electron-packager -g
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## GERAR PACOTE WINDOWS
+electron-packager . --platform=win32
+`Ou`
+electron-packager . MyApp --platform=win32 --arch=ia32
 
-## Running end-to-end tests
+## GERAR PACOTE PARA LINUX
+electron-packager . --platform=linux
+`Ou`
+electron-packager . myApp --platform=linux --arch=x64
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## GERAR PACOTE PARA MAC OS
+electron-packager . --platform=darwin
+`Ou`
+electron-packager . myApp --platform=darwin --arch=x64
